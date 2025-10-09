@@ -54,21 +54,21 @@ jobs:
           cd wiki
           remote="https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.wiki.git"
 
-          # Detect default branch on remote (fallback to master)
-          default_branch=$(git ls-remote --symref "$remote" HEAD 2>/dev/null | awk '/^ref:/{print $2}' | sed 's|refs/heads/||')
-          if [ -z "$default_branch" ]; then
-            default_branch=master
-          fi
-
+          # Wiki repos always use master as the default branch
           # Remove existing git history and create a fresh single-commit repo
           rm -rf .git
           git init
+          
+          # Set git configuration
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
           git remote add origin "$remote"
 
           git add .
           if [ -n "$(git status --porcelain)" ]; then
             timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
             git commit -m "Update proxy lists - $timestamp"
-            git branch -M "$default_branch"
-            git push --force origin "$default_branch"
+            git branch -M master
+            git push --force origin master
           fi
