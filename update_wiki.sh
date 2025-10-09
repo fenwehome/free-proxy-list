@@ -3,7 +3,7 @@
 # Build wiki Home.md with numeric total and list links
 total=$(cat list/*.txt 2>/dev/null | wc -l | tr -d ' ')
 [ -n "$total" ] || total=0
-cat > wiki/Home.md << EOF
+cat > ../wiki/Home.md << EOF
 # Proxy Lists
 
 **Total Proxies:** $total
