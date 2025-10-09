@@ -54,26 +54,26 @@ Click on your preferred proxy type to get the latest list. These links always po
 
 <!-- BEGIN PROXY LIST -->
 
-Last Updated: 2025-10-09 18:24:38 UTC
+Last Updated: 2025-10-09 18:49:35 UTC
 
-**Total Proxies: 1797541**
+**Total Proxies: 1853054**
 
 Click on your preferred proxy type to get the latest list. These links always point to the most recently updated proxy files.
 
 | Protocol | Count | Download |
 |----------|-------|----------|
-| HTTP | 434960 | https://github.com/gfpcom/free-proxy-list/wiki/lists/http.txt |
-| HTTPS | 435985 | https://github.com/gfpcom/free-proxy-list/wiki/lists/https.txt |
+| HTTP | 448833 | https://github.com/gfpcom/free-proxy-list/wiki/lists/http.txt |
+| HTTPS | 449650 | https://github.com/gfpcom/free-proxy-list/wiki/lists/https.txt |
 | HY | 6 | https://github.com/gfpcom/free-proxy-list/wiki/lists/hy.txt |
-| HY2 | 283 | https://github.com/gfpcom/free-proxy-list/wiki/lists/hy2.txt |
-| SOCKS4 | 433797 | https://github.com/gfpcom/free-proxy-list/wiki/lists/socks4.txt |
-| SOCKS5 | 434801 | https://github.com/gfpcom/free-proxy-list/wiki/lists/socks5.txt |
-| SS | 5195 | https://github.com/gfpcom/free-proxy-list/wiki/lists/ss.txt |
+| HY2 | 282 | https://github.com/gfpcom/free-proxy-list/wiki/lists/hy2.txt |
+| SOCKS4 | 447760 | https://github.com/gfpcom/free-proxy-list/wiki/lists/socks4.txt |
+| SOCKS5 | 448832 | https://github.com/gfpcom/free-proxy-list/wiki/lists/socks5.txt |
+| SS | 5196 | https://github.com/gfpcom/free-proxy-list/wiki/lists/ss.txt |
 | SSR | 38 | https://github.com/gfpcom/free-proxy-list/wiki/lists/ssr.txt |
-| TROJAN | 5912 | https://github.com/gfpcom/free-proxy-list/wiki/lists/trojan.txt |
+| TROJAN | 5907 | https://github.com/gfpcom/free-proxy-list/wiki/lists/trojan.txt |
 | TUIC | 1 | https://github.com/gfpcom/free-proxy-list/wiki/lists/tuic.txt |
-| VLESS | 39352 | https://github.com/gfpcom/free-proxy-list/wiki/lists/vless.txt |
-| VMESS | 7194 | https://github.com/gfpcom/free-proxy-list/wiki/lists/vmess.txt |
+| VLESS | 39342 | https://github.com/gfpcom/free-proxy-list/wiki/lists/vless.txt |
+| VMESS | 7190 | https://github.com/gfpcom/free-proxy-list/wiki/lists/vmess.txt |
 | WIREGUARD | 17 | https://github.com/gfpcom/free-proxy-list/wiki/lists/wireguard.txt |
 
 <!-- END PROXY LIST -->
