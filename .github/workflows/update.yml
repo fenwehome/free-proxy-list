@@ -1,10 +1,10 @@
-name: Update Wiki Lists
+name: Update Lists
 
 permissions:
   contents: write
 
 concurrency:
-  group: "update-wiki"
+  group: "update"
   cancel-in-progress: true
 
 on:
@@ -13,63 +13,33 @@ on:
     - cron: '0,30 * * * *'  # every 30 minutes
 
 jobs:
-  update-wiki:
+  update:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Generate Lists
-        run: make update
-
-      - name: Clone Wiki
+      - name: Update Lists
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git clone "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.wiki.git" wiki
+          # generate lists and update README
+          make update
 
-      - name: Update Wiki
-        run: |
-          # Create directories if needed
-          mkdir -p wiki/lists
+          # commit generated files back to repo if any changed
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Copy all generated files to wiki (ignore errors if no files)
-          cp -r list/* wiki/lists/ || true
-
-          # Update main wiki page with a simple index (write numeric total and available lists)
-          total=$(cat list/*.txt 2>/dev/null | wc -l | tr -d ' ')
-          if [ -z "$total" ]; then
-            total=0
-          fi
-
-          cat > wiki/Home.md << EOF
-# Proxy Lists
-
-**Total Proxies:** $total
-
-This wiki contains the latest protocol-specific proxy lists under the `lists/` directory.
-
-## Available Lists
-
-$(for f in list/*.txt; do [ -f "$f" ] && echo "* [$(basename "$f")](lists/$(basename "$f"))"; done)
-EOF
-          # This ensures the wiki keeps only one commit in its history.
-          cd wiki
-          remote="https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.wiki.git"
-
-          # Wiki repos always use master as the default branch
-          # Remove existing git history and create a fresh single-commit repo
-          rm -rf .git
-          git init
-          
-          # Set git configuration
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          
-          git remote add origin "$remote"
-
-          git add .
+          git add README.md list/total.svg 2>/dev/null || true
           if [ -n "$(git status --porcelain)" ]; then
             timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
-            git commit -m "Update proxy lists - $timestamp"
-            git branch -M master
-            git push --force origin master
+            git commit -m "chore(list): update STATS and total.svg - $timestamp"
+            # push using token
+            git push "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" HEAD
           fi
+
+      - name: Clone Wiki
+        run: make clone-wiki
+
+      - name: Update Wiki
+        run: make update-wiki
