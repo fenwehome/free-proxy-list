@@ -54,20 +54,20 @@ Click on your preferred proxy type to get the latest list. These links always po
 
 <!-- BEGIN PROXY LIST -->
 
-Last Updated: 2025-10-09 12:04:11 UTC
+Last Updated: 2025-10-09 12:09:03 UTC
 
-**Total Proxies: 1853192**
+**Total Proxies: 1852756**
 
 Click on your preferred proxy type to get the latest list. These links always point to the most recently updated proxy files.
 
 | Protocol | Count | Download |
 |----------|-------|----------|
-| HTTP | 448847 | https://github.com/gfpcom/free-proxy-list/wiki/lists/http.txt |
-| HTTPS | 449917 | https://github.com/gfpcom/free-proxy-list/wiki/lists/https.txt |
+| HTTP | 448632 | https://github.com/gfpcom/free-proxy-list/wiki/lists/http.txt |
+| HTTPS | 449709 | https://github.com/gfpcom/free-proxy-list/wiki/lists/https.txt |
 | HY | 6 | https://github.com/gfpcom/free-proxy-list/wiki/lists/hy.txt |
 | HY2 | 286 | https://github.com/gfpcom/free-proxy-list/wiki/lists/hy2.txt |
-| SOCKS4 | 447676 | https://github.com/gfpcom/free-proxy-list/wiki/lists/socks4.txt |
-| SOCKS5 | 448766 | https://github.com/gfpcom/free-proxy-list/wiki/lists/socks5.txt |
+| SOCKS4 | 447679 | https://github.com/gfpcom/free-proxy-list/wiki/lists/socks4.txt |
+| SOCKS5 | 448750 | https://github.com/gfpcom/free-proxy-list/wiki/lists/socks5.txt |
 | SS | 5176 | https://github.com/gfpcom/free-proxy-list/wiki/lists/ss.txt |
 | SSR | 38 | https://github.com/gfpcom/free-proxy-list/wiki/lists/ssr.txt |
 | TROJAN | 5926 | https://github.com/gfpcom/free-proxy-list/wiki/lists/trojan.txt |
