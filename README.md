@@ -54,7 +54,7 @@ Click on your preferred proxy type to get the latest list. These links always po
 
 <!-- BEGIN PROXY LIST -->
 
-Last Updated: 2025-10-09 12:15:23 UTC
+Last Updated: 2025-10-09 12:19:35 UTC
 
 **Total Proxies: 1853053**
 
