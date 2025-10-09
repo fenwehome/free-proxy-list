@@ -54,26 +54,26 @@ Click on your preferred proxy type to get the latest list. These links always po
 
 <!-- BEGIN PROXY LIST -->
 
-Last Updated: 2025-10-09 16:23:22 UTC
+Last Updated: 2025-10-09 16:49:41 UTC
 
-**Total Proxies: 1854172**
+**Total Proxies: 1853369**
 
 Click on your preferred proxy type to get the latest list. These links always point to the most recently updated proxy files.
 
 | Protocol | Count | Download |
 |----------|-------|----------|
-| HTTP | 449234 | https://github.com/gfpcom/free-proxy-list/wiki/lists/http.txt |
-| HTTPS | 450068 | https://github.com/gfpcom/free-proxy-list/wiki/lists/https.txt |
+| HTTP | 448908 | https://github.com/gfpcom/free-proxy-list/wiki/lists/http.txt |
+| HTTPS | 449811 | https://github.com/gfpcom/free-proxy-list/wiki/lists/https.txt |
 | HY | 6 | https://github.com/gfpcom/free-proxy-list/wiki/lists/hy.txt |
 | HY2 | 284 | https://github.com/gfpcom/free-proxy-list/wiki/lists/hy2.txt |
-| SOCKS4 | 447936 | https://github.com/gfpcom/free-proxy-list/wiki/lists/socks4.txt |
-| SOCKS5 | 448981 | https://github.com/gfpcom/free-proxy-list/wiki/lists/socks5.txt |
-| SS | 5190 | https://github.com/gfpcom/free-proxy-list/wiki/lists/ss.txt |
+| SOCKS4 | 447850 | https://github.com/gfpcom/free-proxy-list/wiki/lists/socks4.txt |
+| SOCKS5 | 448856 | https://github.com/gfpcom/free-proxy-list/wiki/lists/socks5.txt |
+| SS | 5189 | https://github.com/gfpcom/free-proxy-list/wiki/lists/ss.txt |
 | SSR | 36 | https://github.com/gfpcom/free-proxy-list/wiki/lists/ssr.txt |
 | TROJAN | 5919 | https://github.com/gfpcom/free-proxy-list/wiki/lists/trojan.txt |
 | TUIC | 1 | https://github.com/gfpcom/free-proxy-list/wiki/lists/tuic.txt |
-| VLESS | 39310 | https://github.com/gfpcom/free-proxy-list/wiki/lists/vless.txt |
-| VMESS | 7190 | https://github.com/gfpcom/free-proxy-list/wiki/lists/vmess.txt |
+| VLESS | 39303 | https://github.com/gfpcom/free-proxy-list/wiki/lists/vless.txt |
+| VMESS | 7189 | https://github.com/gfpcom/free-proxy-list/wiki/lists/vmess.txt |
 | WIREGUARD | 17 | https://github.com/gfpcom/free-proxy-list/wiki/lists/wireguard.txt |
 
 <!-- END PROXY LIST -->
