@@ -14,18 +14,3 @@ This wiki contains the latest protocol-specific proxy lists under the `lists/` d
 
 $(for f in list/*.txt; do [ -f "$f" ] && echo "* [$(basename "$f")](lists/$(basename "$f"))"; done)
 EOF
-
-# Replace wiki history with a single commit and push
-cd ../wiki
-rm -rf .git
-git init
-git config user.name "github-actions[bot]"
-git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-git remote add origin https://github.com/gfpcom/free-proxy-list.wiki.git
-git add .
-if [ -n "$(git status --porcelain)" ]; then \
-    timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC"); \
-    git commit -m "Update proxy lists - $timestamp"; \
-    git branch -M master; \
-    git push --force origin master; \
-fi
