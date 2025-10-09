@@ -1,12 +1,10 @@
-name: Update
-
+name: Update Wiki Lists
 
 permissions:
   contents: write
-  repository-projects: write
 
 concurrency:
-  group: "update-${{ github.ref }}"
+  group: "update-wiki"
   cancel-in-progress: true
 
 on:
@@ -15,29 +13,62 @@ on:
     - cron: '0,30 * * * *'  # every 30 minutes
 
 jobs:
-  Update:
+  update-wiki:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Update
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
-        run: |
-          git config pull.rebase true
-          git pull
-          git config user.name gfpcom
-          git config user.email support@getfreeproxy.com
+      - name: Generate Lists
+        run: make update
 
-          make update
-          
+      - name: Clone Wiki
+        run: |
+          git clone "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.wiki.git" wiki
+
+      - name: Update Wiki
+        run: |
+          # Create directories if needed
+          mkdir -p wiki/lists
+
+          # Copy all generated files to wiki (ignore errors if no files)
+          cp -r list/* wiki/lists/ || true
+
+          # Update main wiki page
+          cat > wiki/Home.md << EOF
+          # Proxy Lists
+
+          This page contains automatically updated proxy lists. Last update: $(date -u)
+
+          ## Available Lists
+
+          $(for f in list/*.txt; do echo "* [$(basename $f .txt)](lists/$(basename $f))"; done)
+
+          ## Statistics
+
+          $(for f in list/*.svg; do echo "* ![$(basename $f .svg) stats](lists/$(basename $f))"; done)
+          EOF
+
+          # Replace wiki history with a single commit and force-push.
+          # This ensures the wiki keeps only one commit in its history.
+          cd wiki
+          remote="https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.wiki.git"
+
+          # Detect default branch on remote (fallback to master)
+          default_branch=$(git ls-remote --symref "$remote" HEAD 2>/dev/null | awk '/^ref:/{print $2}' | sed 's|refs/heads/||')
+          if [ -z "$default_branch" ]; then
+            default_branch=master
+          fi
+
+          # Remove existing git history and create a fresh single-commit repo
+          rm -rf .git
+          git init
+          git remote add origin "$remote"
+
           git add .
-          changes=$(git diff --staged --numstat | wc -l)
-          if [[ $changes -gt 0 ]]
-          then
-            timestamp=$(date +"%Y-%m-%d %H:%M:%S")
-            git commit -m "fix(list): updated list at $timestamp"
-            git push
+          if [ -n "$(git status --porcelain)" ]; then
+            timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+            git commit -m "Update proxy lists - $timestamp"
+            git branch -M "$default_branch"
+            git push --force origin "$default_branch"
           fi
