@@ -54,26 +54,26 @@ Click on your preferred proxy type to get the latest list. These links always po
 
 <!-- BEGIN PROXY LIST -->
 
-Last Updated: 2025-10-09 19:15:38 UTC
+Last Updated: 2025-10-09 19:37:44 UTC
 
-**Total Proxies: 1799509**
+**Total Proxies: 1797222**
 
 Click on your preferred proxy type to get the latest list. These links always point to the most recently updated proxy files.
 
 | Protocol | Count | Download |
 |----------|-------|----------|
-| HTTP | 435409 | https://github.com/gfpcom/free-proxy-list/wiki/lists/http.txt |
-| HTTPS | 436369 | https://github.com/gfpcom/free-proxy-list/wiki/lists/https.txt |
+| HTTP | 434855 | https://github.com/gfpcom/free-proxy-list/wiki/lists/http.txt |
+| HTTPS | 435762 | https://github.com/gfpcom/free-proxy-list/wiki/lists/https.txt |
 | HY | 6 | https://github.com/gfpcom/free-proxy-list/wiki/lists/hy.txt |
 | HY2 | 277 | https://github.com/gfpcom/free-proxy-list/wiki/lists/hy2.txt |
-| SOCKS4 | 434354 | https://github.com/gfpcom/free-proxy-list/wiki/lists/socks4.txt |
-| SOCKS5 | 435401 | https://github.com/gfpcom/free-proxy-list/wiki/lists/socks5.txt |
+| SOCKS4 | 433807 | https://github.com/gfpcom/free-proxy-list/wiki/lists/socks4.txt |
+| SOCKS5 | 434822 | https://github.com/gfpcom/free-proxy-list/wiki/lists/socks5.txt |
 | SS | 5193 | https://github.com/gfpcom/free-proxy-list/wiki/lists/ss.txt |
 | SSR | 36 | https://github.com/gfpcom/free-proxy-list/wiki/lists/ssr.txt |
 | TROJAN | 5910 | https://github.com/gfpcom/free-proxy-list/wiki/lists/trojan.txt |
 | TUIC | 1 | https://github.com/gfpcom/free-proxy-list/wiki/lists/tuic.txt |
-| VLESS | 39344 | https://github.com/gfpcom/free-proxy-list/wiki/lists/vless.txt |
-| VMESS | 7192 | https://github.com/gfpcom/free-proxy-list/wiki/lists/vmess.txt |
+| VLESS | 39343 | https://github.com/gfpcom/free-proxy-list/wiki/lists/vless.txt |
+| VMESS | 7193 | https://github.com/gfpcom/free-proxy-list/wiki/lists/vmess.txt |
 | WIREGUARD | 17 | https://github.com/gfpcom/free-proxy-list/wiki/lists/wireguard.txt |
 
 <!-- END PROXY LIST -->
