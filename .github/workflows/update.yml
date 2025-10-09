@@ -1,0 +1,43 @@
+name: Update
+
+
+permissions:
+  contents: write
+  repository-projects: write
+
+concurrency:
+  group: "update-${{ github.ref }}"
+  cancel-in-progress: true
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0,30 * * * *'  # every 30 minutes
+
+jobs:
+  Update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Update
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        run: |
+          git config pull.rebase true
+          git pull
+          git config user.name gfpcom
+          git config user.email support@getfreeproxy.com
+
+          make update
+          
+          git add .
+          changes=$(git diff --staged --numstat | wc -l)
+          if [[ $changes -gt 0 ]]
+          then
+            timestamp=$(date +"%Y-%m-%d %H:%M:%S")
+            git commit -m "fix(list): updated list at $timestamp"
+            git push
+          fi
