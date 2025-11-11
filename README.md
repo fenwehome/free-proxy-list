@@ -54,22 +54,22 @@ Click on your preferred proxy type to get the latest list. These links always po
 
 <!-- BEGIN PROXY LIST -->
 
-Last Updated: 2025-11-11 04:46:06 UTC
+Last Updated: 2025-11-11 05:19:03 UTC
 
-**Total Proxies: 1972081**
+**Total Proxies: 1972382**
 
 Click on your preferred proxy type to get the latest list. These links always point to the most recently updated proxy files.
 
 | Protocol | Count | Download |
 |----------|-------|----------|
-| HTTP | 477778 | https://raw.githubusercontent.com/wiki/gfpcom/free-proxy-list/lists/http.txt |
-| HTTPS | 478575 | https://raw.githubusercontent.com/wiki/gfpcom/free-proxy-list/lists/https.txt |
+| HTTP | 477848 | https://raw.githubusercontent.com/wiki/gfpcom/free-proxy-list/lists/http.txt |
+| HTTPS | 478728 | https://raw.githubusercontent.com/wiki/gfpcom/free-proxy-list/lists/https.txt |
 | HY | 7 | https://raw.githubusercontent.com/wiki/gfpcom/free-proxy-list/lists/hy.txt |
 | HY2 | 342 | https://raw.githubusercontent.com/wiki/gfpcom/free-proxy-list/lists/hy2.txt |
-| SOCKS4 | 477490 | https://raw.githubusercontent.com/wiki/gfpcom/free-proxy-list/lists/socks4.txt |
-| SOCKS5 | 477725 | https://raw.githubusercontent.com/wiki/gfpcom/free-proxy-list/lists/socks5.txt |
-| SS | 5406 | https://raw.githubusercontent.com/wiki/gfpcom/free-proxy-list/lists/ss.txt |
-| SSR | 30 | https://raw.githubusercontent.com/wiki/gfpcom/free-proxy-list/lists/ssr.txt |
+| SOCKS4 | 477506 | https://raw.githubusercontent.com/wiki/gfpcom/free-proxy-list/lists/socks4.txt |
+| SOCKS5 | 477784 | https://raw.githubusercontent.com/wiki/gfpcom/free-proxy-list/lists/socks5.txt |
+| SS | 5405 | https://raw.githubusercontent.com/wiki/gfpcom/free-proxy-list/lists/ss.txt |
+| SSR | 34 | https://raw.githubusercontent.com/wiki/gfpcom/free-proxy-list/lists/ssr.txt |
 | TROJAN | 5998 | https://raw.githubusercontent.com/wiki/gfpcom/free-proxy-list/lists/trojan.txt |
 | TUIC | 5 | https://raw.githubusercontent.com/wiki/gfpcom/free-proxy-list/lists/tuic.txt |
 | VLESS | 41322 | https://raw.githubusercontent.com/wiki/gfpcom/free-proxy-list/lists/vless.txt |
