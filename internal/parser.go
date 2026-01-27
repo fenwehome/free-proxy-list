@@ -18,6 +18,13 @@ var (
 	ErrInvalidProxy = errors.New("gfp: invalid proxy")
 )
 
+const (
+	// MaxSchemeLength defines the maximum allowed length for proxy scheme.
+	// Legitimate proxy protocols (http, https, socks4, socks5, vmess, trojan, vless, ss, ssr, hy, hy2)
+	// are all 6 characters or less. 15 provides safe headroom for future protocols.
+	MaxSchemeLength = 15
+)
+
 type Parser func(string, string) (*Proxy, error)
 
 func RegisterParser(name string, parser Parser) {
@@ -48,6 +55,11 @@ func ParseProxyURL(proto, proxyURL string) (*Proxy, error) {
 	}
 
 	scheme := strings.ToLower(u.Scheme)
+
+	// Validate scheme length to prevent invalid protocols
+	if len(scheme) == 0 || len(scheme) > MaxSchemeLength {
+		return nil, ErrInvalidProxy
+	}
 
 	// Convert hysteria to hy and hysteria2 to hy2
 	switch scheme {
