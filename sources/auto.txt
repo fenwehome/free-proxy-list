@@ -107,6 +107,11 @@ https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/d
 https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/default/all-secure-3.txt
 https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/default/all-secure-4.txt
 https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/default/all-secure-5.txt
+https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/bypass/raw/bypass-all-raw.txt
+https://github.com/whoahaow/rjsxrd/raw/refs/heads/main/githubmirror/bypass-unsecure/raw/bypass-unsecure-all-raw.txt
+https://github.com/whoahaow/rjsxrd/raw/refs/heads/main/githubmirror/bypass-unsecure/raw/bypass-unsecure-all-raw-1.txt
+https://github.com/whoahaow/rjsxrd/raw/refs/heads/main/githubmirror/bypass-unsecure/raw/bypass-unsecure-all-raw-2.txt
+https://github.com/whoahaow/rjsxrd/raw/refs/heads/main/githubmirror/bypass-unsecure/raw/bypass-unsecure-all-raw-3.txt
 https://raw.githubusercontent.com/V2RAYCONFIGSPOOL/V2RAY_SUB/refs/heads/main/v2ray_configs_no1.txt
 https://raw.githubusercontent.com/V2RAYCONFIGSPOOL/V2RAY_SUB/refs/heads/main/v2ray_configs_no2.txt
 https://raw.githubusercontent.com/V2RAYCONFIGSPOOL/V2RAY_SUB/refs/heads/main/v2ray_configs_no3.txt
