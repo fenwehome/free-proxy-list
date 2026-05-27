@@ -75,3 +75,5 @@ https://raw.githubusercontent.com/fyvri/fresh-proxy-list/archive/storage/classic
 https://raw.githubusercontent.com/fyvri/fresh-proxy-list/archive/storage/classic/https.txt
 https://github.com/proxygenerator1/ProxyGenerator/raw/refs/heads/main/Unstable/http.txt
 https://github.com/proxygenerator1/ProxyGenerator/raw/refs/heads/main/Unstable/https.txt
+https://github.com/proxygenerator1/ProxyGenerator/raw/refs/heads/main/Stable/http.txt
+https://github.com/proxygenerator1/ProxyGenerator/raw/refs/heads/main/Stable/https.txt
