@@ -132,3 +132,4 @@ https://raw.githubusercontent.com/MohammadBahemmat/V2ray-Collector/refs/heads/ma
 https://raw.githubusercontent.com/MohammadBahemmat/V2ray-Collector/refs/heads/main/servers/tuic_servers.txt
 https://raw.githubusercontent.com/MohammadBahemmat/V2ray-Collector/refs/heads/main/servers/vless_servers.txt
 https://raw.githubusercontent.com/MohammadBahemmat/V2ray-Collector/refs/heads/main/servers/vmess_servers.txt
+https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/all_sub.txt
